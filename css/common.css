@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@-webkit-keyframes scroll-down-1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll-down-1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scroll-down-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-down-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+.hide {
+  display: inline-block;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+
+.blind {
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  margin: -1px;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "NotoSansKR", sans-serif;
+  word-break: keep-all;
+  background: #eee;
+}
+
+b {
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Montserrat", "NotoSansKR", sans-serif;
+  font-size: 20px;
+  margin-bottom: 11px;
+  color: #aaa;
+}
+
+@media (max-width: 1330px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1330px) and (max-width: 1024px) {
+  h2 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1330px) and (max-width: 1024px) and (max-width: 768px) {
+  h2 {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", "NotoSansKR", sans-serif;
+  font-size: 60px;
+  color: #111;
+}
+
+@media (max-width: 1600px) {
+  h3 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1600px) and (max-width: 1330px) {
+  h3 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1600px) and (max-width: 1330px) and (max-width: 1024px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1600px) and (max-width: 1330px) and (max-width: 1024px) and (max-width: 768px) {
+  h3 {
+    font-size: 26px;
+  }
+}
+
+.btn_wrap a {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  line-height: 1;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .btn_wrap a {
+    font-size: 10px;
+  }
+}
+
+.btn_wrap a span {
+  letter-spacing: 0.05em;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Montserrat", "NotoSansKR", sans-serif;
+}
+
+.btn_wrap a .icon_arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 11px;
+}
+
+@media (max-width: 768px) {
+  .btn_wrap a .icon_arrow {
+    margin-left: 9px;
+  }
+}
+
+.btn_wrap a .icon_arrow::before {
+  display: block;
+  font-family: "jt-font";
+  font-size: 41px;
+  font-weight: normal;
+  font-style: normal;
+  color: #111;
+  content: "\e939";
+}
+
+@media (max-width: 768px) {
+  .btn_wrap a .icon_arrow::before {
+    font-size: 27px;
+    content: "\e903";
+  }
+}
+
+.btn_wrap a .icon_arrow::after {
+  display: block;
+  font-family: "jt-font";
+  font-size: 69px;
+  font-weight: normal;
+  font-style: normal;
+  color: #c1c4aa;
+  content: "\e93a";
+  position: absolute;
+  bottom: -13px;
+  right: -33px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  .btn_wrap a .icon_arrow::after {
+    font-size: 52px;
+    bottom: -12px;
+    right: -27px;
+  }
+}
+
+.btn_wrap a:hover .icon_arrow::after {
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  opacity: 1;
+}
+
+.btn_wrap.type02 a {
+  color: #fff;
+}
+
+.btn_wrap.type02 a .icon_arrow::before {
+  color: #fff;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=common.css.map */

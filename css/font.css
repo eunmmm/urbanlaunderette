@@ -1,0 +1,95 @@
+/* ************************************** *
+ * NotoSansKR
+ * ************************************** */
+
+/* @font-face {
+    font-family:'NotoSansKR';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 400;
+    src: url('../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.eot');
+    src: local("?"),
+         url('../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.woff') format('woff'),
+         url('../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+ */
+ @font-face {
+     font-family:'NotoSansKR';
+     font-style: normal;
+     font-display: auto;
+     font-weight: 500;
+     src: local("?"),
+          url('../fonts/NotoSans/notosanskr-medium-klc.woff') format('woff'),
+          url('../fonts/NotoSans/notosanskr-medium-klc.otf') format('opentype');
+ }
+
+ @font-face {
+     font-family:'NotoSansKR';
+     font-style: normal;
+     font-display: auto;
+     font-weight: 600;
+     src: local("?"),
+          url('../fonts/NotoSans/notosanskr-bold-klc.woff') format('woff'),
+          url('../fonts/NotoSans/notosanskr-bold-klc.otf') format('opentype');
+ }
+
+
+
+/* ************************************** *
+ * Montserrat
+ * ************************************** */
+
+/*  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 300;
+    src: local('※'),
+         url('../fonts/Montserrat/Montserrat-Light.woff') format('woff');
+ } */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 400;
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+	src: local("?"),
+		 url('../fonts/Montserrat/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 500;
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+	src: local("?"),
+		 url('../fonts/Montserrat/Montserrat-Medium.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: auto;
+    font-weight: 600;
+    src: url('../fonts/Montserrat/Montserrat-Bold.eot');
+	src: local("?"),
+		 url('../fonts/Montserrat/Montserrat-Bold.otf') format('opentype');
+}
+
+
+
+/* ************************************** *
+ * JT-FONT
+ * ************************************** */
+@font-face {
+    font-family:'jt-font';
+    font-style: normal;
+    font-display: block;
+    font-weight: normal;
+    src: url('../fonts/jt-font/jt-font.eot');
+    src: local("?"),
+         url('../fonts/jt-font/jt-font.woff') format('woff');
+}
