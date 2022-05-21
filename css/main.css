@@ -48,6 +48,10 @@
 
 /*반응형 화면 크기*/
 /*반응형, 브라우저 크기가 767px 이하일때*/
+html {
+  overflow-x: hidden;
+}
+
 .main_bg {
   position: fixed;
   top: 0;

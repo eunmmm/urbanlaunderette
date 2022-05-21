@@ -25,10 +25,7 @@ $(function () {
 
   locoScroll.on("scroll", ScrollTrigger.update);
 
-  var $window = $(window);
-  var $document = $(document);
   var $header = $("#header");
-  var $footer = $("#footer");
   var $scrollBtn = $("#go_top");
   var $scrollDown = $(".scroll_down");
   var $serviceSection = document.querySelector(".sc_service");
@@ -38,8 +35,10 @@ $(function () {
 
     if (scrollTop > $header.height()) {
       $header.addClass("minimize");
+      $(".line").css({ background: "#111" });
     } else {
       $header.removeClass("minimize");
+      $(".line").css({ background: "#fff" });
     }
   });
 
@@ -66,7 +65,7 @@ $(function () {
   });
 
   let count = true;
-  $(".nav_btn").click(function (e) {
+  $(".nav_btn").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("on")) {
       //후클릭
@@ -91,7 +90,7 @@ $(function () {
     } else {
       $(".minimize#header .nav_btn .line").css({ background: "#fff" });
 
-      //찻클릭
+      //첫클릭
       if (count != false) {
         $(".nav_wrap").addClass("on");
         $(".login a").addClass("on");
@@ -111,12 +110,9 @@ $(function () {
 
   var visual_swiper = new Swiper(".visual_wrap", {
     init: false,
-    // direction: "vertical",
-
     effect: "fade",
     fadeEffect: { crossFade: false },
     parallax: true,
-
     loop: true,
     speed: 1200,
     lazy: {
@@ -126,10 +122,6 @@ $(function () {
       nextEl: ".slider_navigation .btn_next",
       prevEl: ".slider_navigation .btn_prev",
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
     pagination: {
       el: ".sc_visual .swiper_pagination",
       type: "fraction",
@@ -149,7 +141,6 @@ $(function () {
 
   visual_swiper.on("init", function () {
     //초기세팅!
-
     gsap.to($(".swiper-slide-active .hide"), 1, {
       y: 0,
       opacity: 1,
@@ -194,7 +185,6 @@ $(function () {
   });
 
   function progress_motion() {
-    gsap.killTweensOf($progress);
     gsap.set($progress, { width: "0%" });
     gsap.to($progress, 3, {
       width: "100%",

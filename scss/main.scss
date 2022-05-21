@@ -1,6 +1,7 @@
 @import "_mixin.scss";
 
-main {
+html {
+  overflow-x: hidden;
 }
 .main_bg {
   position: fixed;

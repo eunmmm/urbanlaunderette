@@ -353,12 +353,6 @@ header .header_wrap {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
-  .nav_wrap .nav_bg {
-    left: 50%;
-  }
-}
-
 .nav_wrap .nav_bg.on {
   left: 0;
 }
@@ -755,8 +749,20 @@ header .header_wrap {
   background: rgba(255, 255, 255, 0.95);
 }
 
+@media (max-width: 768px) {
+  .minimize#header {
+    height: 70px;
+  }
+}
+
 .minimize#header .nav_btn {
   top: 35px;
+}
+
+@media (max-width: 768px) {
+  .minimize#header .nav_btn {
+    top: 24px;
+  }
 }
 
 .minimize#header .nav_btn .line {
